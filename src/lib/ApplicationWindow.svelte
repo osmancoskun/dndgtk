@@ -6,6 +6,7 @@
 </script>
 
 <div
+    id={props?.id}
     class="appwindow shadow-xl"
     style="--height:{props?.height}px;--width:{props?.width}px"
 >
@@ -28,8 +29,8 @@
     .appwindow {
         width: var(--width);
         height: var(--height);
-        max-width: var(--width);
-        max-height: var(--height);
+        max-height: auto;
+        max-width: auto;
     }
     .appheader {
         background: #ebebeb;
